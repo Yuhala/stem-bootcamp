@@ -1,5 +1,7 @@
 ## Home automation
-- TODO: description
+Home automation or domotics involves automatic control of home appliances by electronic systems. These automations are the basis of smart homes. Popular home
+automation systems comprise Amazon Alexa, Google Home, etc. In this project, we leverage an Arduino MC to build a home automation system that can
+switch on and off lights, fans, etc via infra-red remote control and bluetooth, e.g using a mobile phone.
 
 ## Identification of components
 - Arduino Uno (x1)

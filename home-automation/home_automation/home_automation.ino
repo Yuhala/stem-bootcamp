@@ -31,6 +31,19 @@ int redLed = 13;
 IRrecv irrecv(recvPin);
 decode_results results;
 
+/**
+ * Contains all bluetooth related code.
+ * Connect bluetooth module to device and
+ * read messages sent.
+ */
+void runBluetooth();
+
+/**
+ * Contains infrared related code.
+ *
+ */
+void runInfrared();
+
 void setup()
 {
   /**
@@ -44,6 +57,16 @@ void setup()
 }
 
 void loop()
+{
+  runInfrared();
+  runBluetooth();
+}
+
+void runBluetooth()
+{
+}
+
+void runInfrared()
 {
   if (irrecv.decode(&results))
   {

@@ -36,7 +36,7 @@
 
 #define DHTTYPE DHT22 // DHT 22 (AM2302) module
 
-// const int buzzer = 7; // buzzer to arduino pin 7
+const int buzzer = 7; // buzzer to arduino pin 7
 
 // Create DHT sensor object: program entity which represents the DHT22 module
 DHT dht(DHTPIN, DHTTYPE);
@@ -44,7 +44,7 @@ DHT dht(DHTPIN, DHTTYPE);
 // Used to determine address of I2C module
 void getI2Address();
 
-// LiquidCrystal_I2C lcd(0x27,16,2); // The LCD-I2C address for a 16 chars and 2 lines display is 0x27
+
 hd44780_I2Cexp lcd;
 
 void setup()
@@ -114,8 +114,8 @@ void loop()
    */
   if (t > 25)
   {
-    // tone(buzzer, 1000); // Send 1KHz sound signal ...
-    // delay(200);         // buzz for 1 sec
-    // noTone(buzzer);     // Stop sound signal
+    tone(buzzer, 1000); // Send 1KHz sound signal ...
+    delay(200);         // buzz for 200 ms
+    noTone(buzzer);     // Stop sound signal
   }
 }

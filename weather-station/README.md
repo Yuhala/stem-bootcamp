@@ -11,6 +11,8 @@ atmospheric temperature, humidity, etc. Sensors are used to obtain data which is
 - The LCD (liquid crystal display) is a module which you can use to print information from the Arduino MC. The I2C (Inter-IC) module enables easy communication between the LCD module and the Arduino MC.
 - The I2C module has 4 pins: 1- `SDA`: serial data pin over which data is sent, 2- `SCL`: serial clock pin used to synchronize the transfer of data between the Arduino MC and the LCD-I2C, 3- `GND`: ground pin, and 4- `VCC`: the power pin used to power the LCD module.
 
+### Buzzer alarm
+- The buzzer alarm will emit a buzzer sound when it receives a HIGH signal from the Arduino MC.
 ### 10 Kohm resistor
 - This will be used as a pull-up resistor for the signal pin from the DHT11 module.
 
@@ -32,6 +34,11 @@ atmospheric temperature, humidity, etc. Sensors are used to obtain data which is
 - Ground pin of DHT11 module to ground on Arduino.
 - SDA pin of LCD-I2C to analog pin 4 (A4) of Arduino.
 - SCL pin of LCD-I2C to analog pin 5 (A5) of Arduino.
+- One buzzer pin to pin 7 of Arduino; the other pin on ground of Arduino.
 
 ## Arduino program
 - TODO
+
+- You can observe on the LCD screen the atmospheric humidity and temperature. 
+- Modify the temperature threshold in the program for the buzzer alarm.
+- Modify the buzzer frequency and observe.

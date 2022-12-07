@@ -20,7 +20,7 @@ atmospheric temperature, humidity, etc. Sensors are used to obtain data which is
 - Download and install the `DHT Sensor` library: `Tools --> Manage libraries --> search for dht (choose DHT sensor library by Adafruit) --> Install`
 - Download and install the `hd44780` library: `Tools --> Manage libraries --> search for hd44780 (choose hd44780 by Bill Perry) --> Install`
 
-- Add the LCD-I2C library: `Sketch --> Include Library --> Add. Zip library --> choose 
+<!-- - Add the LCD-I2C library: `Sketch -- Include Library -- Add. Zip library -- choose -->
 
 ## Circuit diagram
 - TODO

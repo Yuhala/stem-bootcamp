@@ -3,15 +3,35 @@ A weather station consists of instruments and equipment (e.g temperature and hum
 atmospheric temperature, humidity, etc. Sensors are used to obtain data which is sent to an Arduino microcontroller for processing. The results from the Arduino are then displayed on an LCD display. Additional functionality like a buzzer alarm system could be added to provide notifications when the temperature rises above a certain level.
 
 ## Identification of components
+### Arduino Uno (x1)
+
+### Temperature and Humidity sensor (DHT11 module) (x1)
+- The DHT11 module measures humidity and temperature, and transmits the information to the Arduino MC.
+### LCD with I2C interface
+- The LCD (liquid crystal display) is a module which you can use to print information from the Arduino MC. The I2C (Inter-IC) module enables easy communication between the LCD module and the Arduino MC.
+- The I2C module has 4 pins: 1- `SDA`: serial data pin over which data is sent, 2- `SCL`: serial clock pin used to synchronize the transfer of data between the Arduino MC and the LCD-I2C, 3- `GND`: ground pin, and 4- `VCC`: the power pin used to power the LCD module.
+
+### 10 Kohm resistor
+- This will be used as a pull-up resistor for the signal pin from the DHT11 module.
 
 
+- Jumper wires: M-F (x4)
 ## IDE setup
+- Download and install the `DHT Sensor` library: `Tools --> Manage libraries --> search for dht (choose DHT sensor library by Adafruit) --> Install`
+- Download and install the `hd44780` library: `Tools --> Manage libraries --> search for hd44780 (choose hd44780 by Bill Perry) --> Install`
 
+- Add the LCD-I2C library: `Sketch --> Include Library --> Add. Zip library --> choose 
 
 ## Circuit diagram
-
+- TODO
 
 ## Circuit construction (connections)
+- With the DHT module facing you, the pins from left to right are as follows: `VCC (+)`, `Signal pin`, `Not used`, and `Ground (-)`.
+- VCC pin of the DHT11 module to +5V on Arduino.
+- Signal pin of the DHT11 module to pin 11 of the Arduino Uno through the 10 KOhm resistor.
+- Ground pin of DHT11 module to ground on Arduino.
+- SDA pin of LCD-I2C to analog pin 4 (A4) of Arduino.
+- SCL pin of LCD-I2C to analog pin 5 (A5) of Arduino.
 
-
-## Arduion program
+## Arduino program
+- TODO

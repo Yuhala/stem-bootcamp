@@ -41,9 +41,19 @@ In this project, you will use an ultrasonic sensor to determine the distance of 
 
 
 ## Arduino program
-- Explain the Arduino program to the students.
+- After building the circuit, open the Arduino program.
+- Explain the code to the students and answer any questions.
+- Compile the program and make sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
+- Connect the Arduino Uno to a laptop USB port using the USB cable.
+- Upload the program to the Arduino Uno. Make sure the upload is successful. A successful upload prints the message `Done uploading` in the IDE terminal.
 
 - Move the object/obstacle closer to and further from the ultrasonic sensor.
 - You can observe on the calculated distance from the obstacle changes.
 - If the obstacle is within 10cm from the ultrasonic module, the buzzer alarm is turned on; otherwise it goes off.
+- Ask the students how they can apply this in real life. Write down the ideas and share them during presentations.
+
+
+- You can observe on the LCD screen the atmospheric humidity and temperature. 
+- Modify the temperature threshold in the program for the buzzer alarm.
+- Modify the buzzer frequency and observe.
 - Ask the students how they can apply this in real life. Write down the ideas and share them during presentations.

@@ -38,6 +38,8 @@ The bluetooth module is used by the Arduino MC to communicate with other devices
 - Red LED to Arduino pin 13 through a 220 ohm resistor. The longer leg of the LED is the `+` terminal, and the shorter one is the `-` terminal.
 
 #### Arduino program: Infrared
+- After building the circuit, open the Arduino program.
+- Explain the code to the students and answer any questions.
 - In the Arduino program's `loop` function, uncomment the `runInfrared` function.
 - Compile the program and make sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
 - Connect the Arduino Uno to a laptop USB port using the USB cable.
@@ -59,6 +61,8 @@ The bluetooth module is used by the Arduino MC to communicate with other devices
 ## Arduino program
 
 #### Arduino program: Bluetooth
+- After building the circuit, open the Arduino program.
+- Explain the code to the students and answer any questions.
 - In the `loop` function of the Arduino program, uncomment the `runBluetooth` function. 
 - Compile the program and ake sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
 - Connect the Arduino Uno to a laptop USB port using the USB cable.

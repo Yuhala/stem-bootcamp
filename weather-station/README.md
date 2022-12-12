@@ -39,7 +39,9 @@ In this project, you will use a temperature and humidity sensor to determine atm
 - One buzzer pin to pin 7 of Arduino; the other pin on ground of Arduino.
 
 ## Arduino program
-- After building the circuit, open the Arduino program and compile. Make sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
+- After building the circuit, open the Arduino program.
+- Explain the code to the students and answer any questions.
+- Compile the program and make sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
 - Connect the Arduino Uno to a laptop USB port using the USB cable.
 - Upload the program to the Arduino Uno. Make sure the upload is successful. A successful upload prints the message `Done uploading` in the IDE terminal.
 - You can observe on the LCD screen the atmospheric humidity and temperature. 

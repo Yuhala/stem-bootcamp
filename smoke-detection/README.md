@@ -42,6 +42,14 @@ In this project, you will use a gas sensor to determine if there is a gas leak. 
 
 
 ## Arduino program
-- Explain the Arduino program to the students.
+- After building the circuit, open the Arduino program.
+- Explain the code to the students and answer any questions.
+- Compile the program and make sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
+- Connect the Arduino Uno to a laptop USB port using the USB cable.
+- Upload the program to the Arduino Uno. Make sure the upload is successful. A successful upload prints the message `Done uploading` in the IDE terminal.
+- At the onset, the gas/smoke concentration is not high so the green LED is on, while the red LED stays off.
 
--
+- To increase the smoke concentration, use a lighter to burn a small piece of paper. Turn off the flames and place the smoke close to the gas sensor.
+- You observe that the buzzer alarm starts, and the red LED flashes. This is because the gas concentration has crossed the threshold set in the program.
+- Repeat the exercise multiple times with the students.
+- Ask the students how they can apply this in real life. Write down the ideas and share them during presentations.

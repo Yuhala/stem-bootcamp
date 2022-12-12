@@ -2,6 +2,8 @@
 A weather station consists of instruments and equipment (e.g temperature and humidity sensors) for monitoring atmospheric conditions. Weather stations provide information used for weather forecasts as well as scientific research. In this project we design and build a prototype weather station capable of monitoring
 atmospheric temperature, humidity, etc. Sensors are used to obtain data which is sent to an Arduino microcontroller for processing. The results from the Arduino are then displayed on an LCD display. Additional functionality like a buzzer alarm system could be added to provide notifications when the temperature rises above a certain level.
 
+## Project description
+In this project, you will use a temperature and humidity sensor to determine atmospheric temperature and humidity. The sensors will send signals to the Arduino MC, which will process these signals and display the results on an LCD monitor. A buzzer alarm system will be used to detect when atmospheric temperature rises above a certain threshold.
 ## Identification of components
 ### Arduino Uno (x1)
 
@@ -37,8 +39,8 @@ atmospheric temperature, humidity, etc. Sensors are used to obtain data which is
 - One buzzer pin to pin 7 of Arduino; the other pin on ground of Arduino.
 
 ## Arduino program
-- TODO
-
+- Explain the Arduino program to the students.
 - You can observe on the LCD screen the atmospheric humidity and temperature. 
 - Modify the temperature threshold in the program for the buzzer alarm.
 - Modify the buzzer frequency and observe.
+- Ask the students how they can apply this in real life. Write down the ideas and share them during presentations.

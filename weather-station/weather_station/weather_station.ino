@@ -36,14 +36,10 @@
 
 #define DHTTYPE DHT22 // DHT 22 (AM2302) module
 
-const int buzzer = 7; // buzzer to arduino pin 7
+#define buzzer 7 // buzzer to arduino pin 7
 
 // Create DHT sensor object: program entity which represents the DHT22 module
 DHT dht(DHTPIN, DHTTYPE);
-
-// Used to determine address of I2C module
-void getI2Address();
-
 
 hd44780_I2Cexp lcd;
 
@@ -53,12 +49,12 @@ void setup()
   lcd.backlight(); // Turn LCD backlight on
 
   // Initialize serial monitor
-  Serial.begin(9600);
-  Serial.println("DHT 22 test >>>>>>");
+  // Serial.begin(9600);
+  // Serial.println("DHT 22 test >>>>>>");
   // Initialize DHT sensor for 16mhz Arduino
   dht.begin();
   // Set buzzer pin as output
-  // pinMode(buzzer, OUTPUT);
+  pinMode(buzzer, OUTPUT);
 }
 
 void loop()
@@ -78,7 +74,7 @@ void loop()
     return;
   }
 
-  lcd.setCursor(0, 1);
+  lcd.setCursor(0, 1); // try 0,0
   /**
    * Print temperature on the LCD
    *
@@ -86,7 +82,7 @@ void loop()
   lcd.print("Temp: ");
   lcd.print(t);
   lcd.print("*C");
-  lcd.setCursor(1, 0);
+  lcd.setCursor(1, 0); // try 0, 1
   /**
    * Print the humidity on the LCD
    *

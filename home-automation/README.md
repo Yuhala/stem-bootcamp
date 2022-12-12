@@ -3,6 +3,10 @@ Home automation or domotics involves automatic control of home appliances by ele
 automation systems comprise Amazon Alexa, Google Home, etc. In this project, we leverage an Arduino MC to build a home automation system that can
 switch on and off lights, fans, etc via infra-red remote control and bluetooth, e.g using a mobile phone.
 
+## Project description
+In this project, we use Infrared and Bluetooth technologies to control LED lights. Remote control devices like an infrared remote or mobile phone will be used to send signals to an infrared or bluetooth sensor respectively.
+These signals will be interpreted by the Arduino MC and used to turn the lights on or off.
+
 ## Identification of components
 - Arduino Uno (x1)
 - IR receiver (x1)

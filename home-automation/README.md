@@ -29,9 +29,9 @@ The bluetooth module is used by the Arduino MC to communicate with other devices
 ## Circuit diagram
 
 
-## Circuit construction (connections)
 
-### Part I: Infrared
+
+## Circuit construction (connections) - Part I: Infrared
 - Signal pin `S` of the IR receiver to Arduino pin 11.
 - Ground pin `-` of the IR receiver to ground on the breadboard.
 - VCC pin of the IR receiver to +5V.
@@ -52,13 +52,12 @@ The bluetooth module is used by the Arduino MC to communicate with other devices
 - Recompile your program and upload to the Arduino again.
 - Now when you press `button 1`, the red LED is turned on, and when you press `button 3`, the red LED is turned off.
 
-### Part II: Bluetooth
+### Circuit construction (connections) - Part II: Bluetooth
 - VCC pin of bluetooth module to +5V.
 - Ground pin of bluetooth module to Arduino ground.
 - TXD pin of bluetooth module to Arduino RX pin (Pin 0): the bluetooth module's transmission pin sends messages to the receiver pin of the Arduino.
 - RXD pin of bluetooth module to Arduino TX pin (Pin 1): the Arduino transmission pin sends messages to the receiver pin of the bluetooth module.
 - Connect the red LED to Arduino pin 13 through a 221 ohm resistor.
-## Arduino program
 
 #### Arduino program: Bluetooth
 - After building the circuit, open the Arduino program.

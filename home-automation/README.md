@@ -26,7 +26,7 @@ The bluetooth module is used by the Arduino MC to communicate with other devices
 ## IDE setup
 - Download and install the `IRremote` library: `Tools --> Manage libraries --> search for IRremote (by Armin Joachimsmeyer) --> Install`
 
-## Circuit diagram
+## Circuit diagram: Infrared
 
 
 
@@ -52,6 +52,8 @@ The bluetooth module is used by the Arduino MC to communicate with other devices
 - Recompile your program and upload to the Arduino again.
 - Now when you press `button 1`, the red LED is turned on, and when you press `button 3`, the red LED is turned off.
 
+
+## Circuit diagram: Bluetooth
 ### Circuit construction (connections) - Part II: Bluetooth
 - VCC pin of bluetooth module to +5V.
 - Ground pin of bluetooth module to Arduino ground.

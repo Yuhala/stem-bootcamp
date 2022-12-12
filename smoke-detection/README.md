@@ -51,5 +51,6 @@ In this project, you will use a gas sensor to determine if there is a gas leak. 
 
 - To increase the smoke concentration, use a lighter to burn a small piece of paper. Turn off the flames and place the smoke close to the gas sensor.
 - You observe that the buzzer alarm starts, and the red LED flashes. This is because the gas concentration has crossed the threshold set in the program.
+- As the smoke and gas disappear, you observe that the gas concentration gets low again and the green LED turns on, while the buzzer and red LED go off.
 - Repeat the exercise multiple times with the students.
 - Ask the students how they can apply this in real life. Write down the ideas and share them during presentations.

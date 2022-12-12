@@ -11,11 +11,17 @@ These signals will be interpreted by the Arduino MC and used to turn the lights 
 - Arduino Uno (x1)
 - IR receiver (x1)
 - IR remote control (x1)
-- Bluetooth module (x1)
+
+
+### Bluetooth module (HC-05) (x1)
+The bluetooth module is used by the Arduino MC to communicate with other devices via bluetooth. This module has 4 pins: 1- `VCC`: used to power the bluetooth module, 2- `GND`: the ground pin, 3- `TXD`: transmission pin of bluetooth module, and 4- `RXD`: receiver pin of bluetooth module. 
+
+
+
 - Jumper wires: M-M (x); M-F (x)
 - 
 - Red LED (x1)
-- 
+- 221 ohm resistor.
 
 ## IDE setup
 - Download and install the `IRremote` library: `Tools --> Manage libraries --> search for IRremote (by Armin Joachimsmeyer) --> Install`
@@ -31,12 +37,9 @@ These signals will be interpreted by the Arduino MC and used to turn the lights 
 - VCC pin of the IR receiver to +5V.
 - Red LED to Arduino pin 13 through a 220 ohm resistor. The longer leg of the LED is the `+` terminal, and the shorter one is the `-` terminal.
 
-### Part II: Bluetooth
-
-## Arduino program
-
-## Part I: Infrared
-- After building the circuit, open the Arduino program and compile. Make sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
+#### Arduino program: Infrared
+- In the Arduino program's `loop` function, uncomment the `runInfrared` function.
+- Compile the program and make sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
 - Connect the Arduino Uno to a laptop USB port using the USB cable.
 - Upload the program to the Arduino Uno. Make sure the upload is successful. A successful upload prints the message `Done uploading` in the IDE terminal.
 - Each time a button on the IR remote control is pressed, it sends a signal to the IR receiver which in turn sends the code to the Arduino Uno microcontroller. We can observe the hexadecimal code corresponding to a button on the remote control using the `Serial Monitor` of the Arduino IDE. 
@@ -47,4 +50,21 @@ These signals will be interpreted by the Arduino MC and used to turn the lights 
 - Recompile your program and upload to the Arduino again.
 - Now when you press `button 1`, the red LED is turned on, and when you press `button 3`, the red LED is turned off.
 
-## Part II: Bluetooth
+### Part II: Bluetooth
+- VCC pin of bluetooth module to +5V.
+- Ground pin of bluetooth module to Arduino ground.
+- TXD pin of bluetooth module to Arduino RX pin (Pin 0): the bluetooth module's transmission pin sends messages to the receiver pin of the Arduino.
+- RXD pin of bluetooth module to Arduino TX pin (Pin 1): the Arduino transmission pin sends messages to the receiver pin of the bluetooth module.
+- Connect the red LED to Arduino pin 13 through a 221 ohm resistor.
+## Arduino program
+
+#### Arduino program: Bluetooth
+- In the `loop` function of the Arduino program, uncomment the `runBluetooth` function. 
+- Compile the program and ake sure there are no compilation errors. A successful compilation prints `Done compiling` in the IDE terminal.
+- Connect the Arduino Uno to a laptop USB port using the USB cable.
+- Before uploading the program to the Arduino Uno, disconnect the TX and RX pins from the Arduino. This will prevent interference during transmission of the code to the board.
+- Upload the program to the Arduino Uno. Make sure the upload is successful. A successful upload prints the message `Done uploading` in the IDE terminal.
+- After uploading the program to the Arduino Uno, connect the TX and RX pins of the bluetooth module again to the Arduino.
+- Open the bluetooth application and scan for the HC-05 bluetooth module. Pair your mobile phone with the device. The default code is either `1234` or `0000`.
+- Send a `1;` message from the bluetooth application to turn on the LED. 
+- Send a `0;` message from the bluetooth application to turn off the LED. 

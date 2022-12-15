@@ -10,26 +10,27 @@ These signals will be interpreted by the Arduino MC and used to turn the lights 
 ## Identification of components
 ### Arduino Uno (x1)
 ![arduino](../imgs/uno.png)
-THe Arduino Uno is a programmable circuit board, or `microcontroller`. The Arduino Uno will be the `brain` of our electronic projects. It will receive input data from sensors, process this data, and send signals to control a actuators like LEDs (lights), buzzer alarms (sound), or motors (mechanical).
+- The Arduino Uno is a programmable circuit board, or `microcontroller`. The Arduino Uno will be the `brain` of our electronic projects. It will receive input data from sensors, process this data, and send signals to control a actuators like LEDs (lights), buzzer alarms (sound), or motors (mechanical).
 
 ### IR remote control (x1)
 ![iremote](../imgs/remotecontrol.png)
-Infrared (IR) communication is one of the most common methods of wireless communication, eg in a TV. When you press a button on an IR remote control, an infrared signal is sent by the remote control to an IR receiver on your TV. Your TV decodes the signal and performs a specific operation. 
+- Infrared (IR) communication is one of the most common methods of wireless communication, eg in a TV. When you press a button on an IR remote control, an infrared signal is sent by the remote control to an IR receiver on your TV. Your TV decodes the signal and performs a specific operation. 
 ### IR receiver (x1)
 ![ireceiver](../imgs/irecv.png)
-The IR receiver is used to receive IR singals from the IR remote. It sends this signal to an Arduino which will decode the signal and perform some operations.
+- The IR receiver is used to receive IR singals from the IR remote. It sends this signal to an Arduino which will decode the signal and perform some operations.
 
 
 ### Bluetooth module (HC-05) (x1)
 ![bluetooth-module](../imgs/hc05.png)
-The bluetooth module is used by the Arduino MC to communicate with other devices via bluetooth. This module has 4 pins: 1- `VCC`: used to power the bluetooth module, 2- `GND`: the ground pin, 3- `TXD`: transmitter pin of bluetooth module, and 4- `RXD`: receiver pin of bluetooth module. 
+- The bluetooth module is used by the Arduino MC to communicate with other devices via bluetooth. This module has 4 pins: 1- `VCC`: used to power the bluetooth module, 2- `GND`: the ground pin, 3- `TXD`: transmitter pin of bluetooth module, and 4- `RXD`: receiver pin of bluetooth module. 
 
 
 ### Jumper wires: M-M (x); M-F (x)
 ![jumpers](../imgs/jumper.png)
-Jumper wires are used to connect sensors and actuators with the Arduino MC.
+- Jumper wires are used to connect sensors and actuators with the Arduino MC.
 
 ### Red LED (x1)
+![redled](../imgs/red.png)
 - A light emitting diode (LED) is a device that emits light when current flows through it. Diodes like LEDs allow current flow only in one direction. The longer pin on an LED is `+` (anode) and the shorter pin is `-` (cathode).
 - LEDs are widely used in Arduino projects.
 

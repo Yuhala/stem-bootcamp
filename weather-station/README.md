@@ -6,10 +6,14 @@ atmospheric temperature, humidity, etc. Sensors are used to obtain data which is
 In this project, you will use a temperature and humidity sensor to determine atmospheric temperature and humidity. The sensors will send signals to the Arduino MC, which will process these signals and display the results on an LCD monitor. A buzzer alarm system will be used to detect when atmospheric temperature rises above a certain threshold.
 ## Identification of components
 ### Arduino Uno (x1)
+![arduino](../imgs/uno.png)
+- The Arduino Uno is a programmable circuit board, or `microcontroller`. The Arduino Uno will be the `brain` of our electronic projects. It will receive input data from sensors, process this data, and send signals to control a actuators like LEDs (lights), buzzer alarms (sound), or motors (mechanical).
 
 ### Temperature and Humidity sensor (DHT11 module) (x1)
+![dht11](../imgs/dht11.jpeg)
 - The DHT11 module measures humidity and temperature, and transmits the information to the Arduino MC.
 ### LCD with I2C interface
+![lcd12c](../imgs/lcdi2c.png)
 - The LCD (liquid crystal display) is a module which you can use to print information from the Arduino MC. The I2C (Inter-IC) module enables easy communication between the LCD module and the Arduino MC.
 - The I2C module has 4 pins: 1- `SDA`: serial data pin over which data is sent, 2- `SCL`: serial clock pin used to synchronize the transfer of data between the Arduino MC and the LCD-I2C, 3- `GND`: ground pin, and 4- `VCC`: the power pin used to power the LCD module.
 

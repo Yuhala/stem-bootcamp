@@ -14,7 +14,7 @@ These signals will be interpreted by the Arduino MC and used to turn the lights 
 
 
 ### Bluetooth module (HC-05) (x1)
-The bluetooth module is used by the Arduino MC to communicate with other devices via bluetooth. This module has 4 pins: 1- `VCC`: used to power the bluetooth module, 2- `GND`: the ground pin, 3- `TXD`: transmission pin of bluetooth module, and 4- `RXD`: receiver pin of bluetooth module. 
+The bluetooth module is used by the Arduino MC to communicate with other devices via bluetooth. This module has 4 pins: 1- `VCC`: used to power the bluetooth module, 2- `GND`: the ground pin, 3- `TXD`: transmitter pin of bluetooth module, and 4- `RXD`: receiver pin of bluetooth module. 
 
 
 
@@ -57,7 +57,7 @@ The bluetooth module is used by the Arduino MC to communicate with other devices
 ### Circuit construction (connections) - Part II: Bluetooth
 - VCC pin of bluetooth module to +5V.
 - Ground pin of bluetooth module to Arduino ground.
-- TXD pin of bluetooth module to Arduino RX pin (Pin 0): the bluetooth module's transmission pin sends messages to the receiver pin of the Arduino.
+- TXD pin of bluetooth module to Arduino RX pin (Pin 0): the bluetooth module's transmitter pin transmits data serially to the receiver pin of the Arduino.
 - RXD pin of bluetooth module to Arduino TX pin (Pin 1): the Arduino transmission pin sends messages to the receiver pin of the bluetooth module.
 - Connect the red LED to Arduino pin 13 through a 221 ohm resistor.
 

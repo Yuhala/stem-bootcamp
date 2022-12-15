@@ -6,29 +6,39 @@ In this project, you will use a gas sensor to determine if there is a gas leak. 
 
 ## Identification of components
 ### Arduino Uno (x1)
+![arduino](../imgs/uno.png)
+- The Arduino Uno is a programmable circuit board, or `microcontroller`. The Arduino Uno will be the `brain` of our electronic projects. It will receive input data from sensors, process this data, and send signals to control a actuators like LEDs (lights), buzzer alarms (sound), or motors (mechanical).
 
 ### MQ2 gas sensor (x1)
+![mq2](../imgs/mq2.png)
 - The MQ2 gas sensor is an electronic sensor used for sensing the concentration of gases in the air such as propane, methane, hydrogen, smoke, alcohol, carbon monoxide etc. This sensor detects gas concentrations in the between 300ppm to 10000ppm. `ppm` is `parts-per-million` and is a unit of measure for gas concentration. 
 - The gas sensor sends an analog or digital value to the Arduino which represents the gas concentration.
 - The MQ2 gas sensor has 4 pins: 1- `VCC`: this pin powers the module, 2- `GND`: the ground pin, 3- `A0`: used to send an analog signal when gas is detected, and 4- `D0`: used to send a digital signal when gas is detected.
 
-
 ### Buzzer alarm
-- The buzzer alarm will emit a buzzer sound when it receives a HIGH signal from the Arduino MC.
+![buzzer](../imgs/buzzer.png)
+- The buzzer alarm is a device that emits a buzzer sound when it receives a HIGH signal from the Arduino MC.
 
 ### Jumper wires
-- Jumper wires: M-F (x6); M-M (x6)
+![jumpers](../imgs/jumper.png)
+- Jumper wires are used to connect sensors and actuators with the Arduino MC.
+- For this project, we will need 6 male-female (M-F) and 6 male-male (M-M) jumper wires.
+
 
 ### Red LED
-- Will flash when gas concentration is high.
+![redled](../imgs/red.png)
+- A light emitting diode (LED) is a device that emits light when current flows through it. Diodes like LEDs allow current flow only in one direction. The longer pin on an LED is `+` (anode) and the shorter pin is `-` (cathode).
+- LEDs are widely used in Arduino projects.
+- In this project, a red LED will flash when gas concentration is high.
 
 ### Green LED
-- Will flash when gas concentration is low.
+![greenled](../imgs/green.png)
+- In this project, a green LED will be stay on when the gas concentration is low.
 
 ### Resistor (220 ohm)
-- Use the Arduino manual (page 32) to identify a `220 ohm` resistor. Resistors will be connected to all LEDs. This prevents the LEDs from being destroyed by high current.
-
-## Circuit diagram
+![220](../imgs/220ohm.png)
+- Resistors are electrical components that reduce the current flow in a circuit. Resistors are usually used with fragile devices like LEDs which could burn if too much current flows through them.
+- Resistors usually have colours which are used to compute the actual resistance in a circuit. The picture shows a `220 ohm` resistor.
 
 
 ## Circuit construction (connections)

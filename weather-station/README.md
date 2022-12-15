@@ -14,20 +14,24 @@ In this project, you will use a temperature and humidity sensor to determine atm
 - The I2C module has 4 pins: 1- `SDA`: serial data pin over which data is sent, 2- `SCL`: serial clock pin used to synchronize the transfer of data between the Arduino MC and the LCD-I2C, 3- `GND`: ground pin, and 4- `VCC`: the power pin used to power the LCD module.
 
 ### Buzzer alarm
-- The buzzer alarm will emit a buzzer sound when it receives a HIGH signal from the Arduino MC.
+![buzzer](../imgs/buzzer.png)
+- The buzzer alarm is a device that emits a buzzer sound when it receives a HIGH signal from the Arduino MC.
 ### 10 Kohm resistor
-- This will be used as a pull-up resistor for the signal pin from the DHT11 module.
+![10kohm](../imgs/10kohm.png)
+- Resistors are electrical components that reduce the current flow in a circuit. Resistors are usually used with fragile devices like LEDs which could burn if too much current flows through them.
+- Resistors usually have colours which are used to compute the actual resistance in a circuit. The picture shows a `10 kohm (10000 ohm)` resistor.
+- This resistor will be used as a pull-up resistor for the signal pin from the DHT11 module. Pull up resistors ensure that the signal pin reads high if there is not signal.
 
+### Jumper wires
+![jumpers](../imgs/jumper.png)
+- Jumper wires are used to connect sensors and actuators with the Arduino MC.
+- For this project, we will need 4 male-female (M-F) jumper wires.
 
-- Jumper wires: M-F (x4)
 ## IDE setup
 - Download and install the `DHT Sensor` library: `Tools --> Manage libraries --> search for dht (choose DHT sensor library by Adafruit) --> Install`
 - Download and install the `hd44780` library: `Tools --> Manage libraries --> search for hd44780 (choose hd44780 by Bill Perry) --> Install`
 
 <!-- - Add the LCD-I2C library: `Sketch -- Include Library -- Add. Zip library -- choose -->
-
-## Circuit diagram
-- TODO
 
 ## Circuit construction (connections)
 - With the DHT module facing you, the pins from left to right are as follows: `VCC (+)`, `Signal pin`, `Not used`, and `Ground (-)`.

@@ -25,7 +25,7 @@ These signals will be interpreted by the Arduino MC and used to turn the lights 
 - The bluetooth module is used by the Arduino MC to communicate with other devices via bluetooth. This module has 4 pins: 1- `VCC`: used to power the bluetooth module, 2- `GND`: the ground pin, 3- `TXD`: transmitter pin of bluetooth module, and 4- `RXD`: receiver pin of bluetooth module. 
 
 
-### Jumper wires: M-M (x); M-F (x)
+### Jumper wires.
 ![jumpers](../imgs/jumper.png)
 - Jumper wires are used to connect sensors and actuators with the Arduino MC.
 
@@ -38,6 +38,7 @@ These signals will be interpreted by the Arduino MC and used to turn the lights 
 ![220](../imgs/220ohm.png)
 - Resistors are electrical components that reduce the current flow in a circuit. Resistors are usually used with fragile devices like LEDs which could burn if too much current flows through them.
 - Resistors usually have colours which are used to compute the actual resistance in a circuit. The picture shows a `220 ohm` resistor.
+- Use the Arduino manual (page 32) to identify a `220 ohm` resistor. Resistors will be connected to all LEDs. This prevents the LEDs from being destroyed by high current.
 
 ## IDE setup
 - Download and install the `IRremote` library: `Tools --> Manage libraries --> search for IRremote (by Armin Joachimsmeyer) --> Install`

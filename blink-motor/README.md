@@ -4,7 +4,7 @@ In this tutorial, we will control a motor with an IR remote control.
 
 
 ## Circuit diagram
-![](imgs/motor_remote.png)
+![motor-remote-circuit](../imgs/motor_remote.png)
 
 ## Circuit construction (connections) Infrared
 - Transistor collector to diode (black side).
